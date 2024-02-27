@@ -41,6 +41,7 @@ async function run() {
       res.send(result);
     });
 
+    // get the user from the backend
     app.get("/getUser", async(req, res) => {
         const email = req.body;
         const query = {email:email};
